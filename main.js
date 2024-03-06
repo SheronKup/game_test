@@ -19,17 +19,47 @@ if(e.key === 'a'){
 }
 )
 
+function pontos(){
+    if(carro.point(c2)){
+        carro.pts += 1
+    }else if(carro.point(c3)){
+        carro.pts += 1
+    }
+}
+
+function colisao(){
+    if(carro.colid(c2)){
+        carro.vida -= 1
+        c2.recomeca()
+        batida.play()
+    }else if(carro.colid(c3)){
+        carro.vida -= 1
+        c3.recomeca()
+        batida.play()
+    }
+}
+
 function desenha(){
 
 }
 function atualiza(){
-
+    musica_fundo.play()
+    ec1.mov_est()
+    ec2.mov_est()
+    ec3.mov_est()
+    ec4.mov_est()
+    ec5.mov_est()
+    ec6.mov_est()
+    ec7.mov_est()
+    c2.atual_carro2()
+    c3.atual_carro2()
+    carro.atual_carro()
+    pontos()
+    colisao()
 }
 
-//enzo vai trbalhar no prog principal
 function main(){
-    //comando de apaga tela
-desenha()// enzo desenho do carro
+desenha()
 atualiza()
 }
 
