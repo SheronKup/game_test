@@ -1,22 +1,23 @@
-class Teste{
-    constructor(x,y){
+class Obj{
+    constructor(x,y,wh,a){
         this.x = x
         this.y = y
+        this.w = w
+        this.h = h
+        this.a = a
     }
+}
 
-    des_obj(){
+class Carro extends Obj{
+dir = 0
+pts = 0
+vida = 5
 
-    }
+des_carro(){
 
-    point(){
+}
 
-    }
+atual_carro(){
 
-    colid(){
-
-    }
-
-    mov(){
-        
-    }
+}
 }
