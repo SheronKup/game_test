@@ -119,7 +119,7 @@ class Inimigo extends Carro{
 
  class Estrada extends Obj{
     des_estrada(){
-        desdes.fillStyle = this.a
+        des.fillStyle = this.a
         des.fillRect(this.x,this.y,this.w,this.h)
     }
 
