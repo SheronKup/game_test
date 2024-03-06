@@ -1,5 +1,5 @@
 class Obj{
-    constructor(x,y,wh,a){
+    constructor(x,y,w,h,a){
         this.x = x
         this.y = y
         this.w = w
@@ -20,4 +20,44 @@ des_carro(){
 atual_carro(){
 
 }
+
+point(Objeto){
+
 }
+
+colid(Objeto){
+
+}
+
+}
+
+class Inimigo extends Carro{
+    atual_inimigo(){
+
+    }
+
+    recomeca(){
+
+    }
+ }
+
+ class Estrada extends Obj{
+  
+
+  des_estrada(){
+
+  }
+mov_estrada(){
+
+}}
+
+ class Text{
+
+    des_text(text,x,y,cor,font){
+        des.fillStyle = cor
+        des.lineWidth = '5'
+        des.font = font
+        des.fillText(text,x,y)
+
+ }}
+
