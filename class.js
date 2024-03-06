@@ -8,8 +8,8 @@ class Obj{
     }
 
     des_obj(){
-        draw.fillStyle = this.a
-        draw.fillRect(this.x,this.y,this.w,this.h)
+        des.fillStyle = this.a
+        des.fillRect(this.x,this.y,this.w,this.h)
     }
 }
 
@@ -20,77 +20,77 @@ class Carro extends Obj{
 
     des_carro(){
     // roda dianteira direita
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#232323'
-    draw.fillStyle = '#000000'
-    draw.rect(this.x+40, this.y-60, 10, 10)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#232323'
+    des.fillStyle = '#000000'
+    des.rect(this.x+40, this.y-60, 10, 10)
+    des.closePath()
+    des.stroke()
+    des.fill()
     
     // roda dianteira esquerda
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#232323'
-    draw.fillStyle = '#000000'
-    draw.rect(this.x, this.y-60, 10, 10)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#232323'
+    des.fillStyle = '#000000'
+    des.rect(this.x, this.y-60, 10, 10)
+    des.closePath()
+    des.stroke()
+    des.fill()
     
     // roda traseira direira
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#232323'
-    draw.fillStyle = '#000000'
-    draw.rect(this.x+40, this.y-20, 10, 10)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#232323'
+    des.fillStyle = '#000000'
+    des.rect(this.x+40, this.y-20, 10, 10)
+    des.closePath()
+    des.stroke()
+    des.fill()
    
     // roda traseira esquerda
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#232323'
-    draw.fillStyle = '#000000'
-    draw.rect(this.x, this.y-20, 10, 10)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#232323'
+    des.fillStyle = '#000000'
+    des.rect(this.x, this.y-20, 10, 10)
+    des.closePath()
+    des.stroke()
+    des.fill()
 
     // trapézio do carro
-    draw.beginPath()
-    draw.moveTo(this.x,this.y) // coordenadas x e y
-    draw.lineTo(this.x+50,this.y)
-    draw.lineTo(this.x+40,this.y-50)
-    draw.lineTo(this.x+10,this.y-50)
-    draw.closePath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#dd2828'
-    draw.fillStyle = this.a
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.moveTo(this.x,this.y) // coordenadas x e y
+    des.lineTo(this.x+50,this.y)
+    des.lineTo(this.x+40,this.y-50)
+    des.lineTo(this.x+10,this.y-50)
+    des.closePath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#dd2828'
+    des.fillStyle = this.a
+    des.stroke()
+    des.fill()
 
     // desenhando corpo frente em um retângulo
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#dd2828'
-    draw.fillStyle = this.a
-    draw.rect(this.x+10,this.y-70,30,20)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#dd2828'
+    des.fillStyle = this.a
+    des.rect(this.x+10,this.y-70,30,20)
+    des.closePath()
+    des.stroke()
+    des.fill()
 
     // desenhando a asa frontal em um retângulo
-    draw.beginPath()
-    draw.lineWidth = '5'
-    draw.strokeStyle = '#dd2828'
-    draw.fillStyle = this.a
-    draw.rect(this.x,this.y-80,50,10)
-    draw.closePath()
-    draw.stroke()
-    draw.fill()
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle = '#dd2828'
+    des.fillStyle = this.a
+    des.rect(this.x,this.y-80,50,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
     }
 
     atual_carro(){
@@ -119,8 +119,8 @@ class Inimigo extends Carro{
 
  class Estrada extends Obj{
     des_estrada(){
-        draw.fillStyle = this.a
-        draw.fillRect(this.x,this.y,this.w,this.h)
+        desdes.fillStyle = this.a
+        des.fillRect(this.x,this.y,this.w,this.h)
     }
 
     mov_estrada(){
